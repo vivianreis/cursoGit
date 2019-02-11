@@ -1,3 +1,4 @@
 def fun(x):
-print x
+print x+x
 fun(3)
+
