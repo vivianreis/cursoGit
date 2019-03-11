@@ -55,3 +55,11 @@ Git push origin master
 
 Git checkout –b feature/java
 
+Atualizar o repositório:
+------------------------------------------------------------------------------------------------------------------------------------
+Atualiza todos os dados do repositório, ou seja, realiza um fetch seguido de um merge.
+
+git pull 
+
+
+
