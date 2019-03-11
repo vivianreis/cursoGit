@@ -55,4 +55,3 @@ Git push origin master
 
 Git checkout –b feature/java
 
-Git push prigin feature/java
