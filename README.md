@@ -11,7 +11,7 @@ Exemplo: git init java-codigo
 
 Deve configurar o usuário e e-mail
 --------------------------------------------------------------------------------------------------------------------------
-Obs: Essas informações não necessariamente precisam ser do GitGub 
+Obs: Essas informações não necessariamente precisam ser do Github 
 
 Atribui o nome do usuário
 $ git config --local user.name <nome>
@@ -45,7 +45,7 @@ $ git commit –m “atualizando programa ola mundo”
 
 Ssh-keygen (tutorial git aula 7) 
 
-Ir no git clicar em clone our download (copiar 
+Ir no git clicar em clone ou download (copiar url gerada)
 
 Depois dar git clone 
 
