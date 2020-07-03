@@ -1,5 +1,18 @@
 # curso-git-cubo
 
+Resumão de passos para subir os exercicios: <br>
+--------------------------------------------------------------------------------------------------------------------------
+- Primeiro cria um repositorio aqui no git
+- Cria no computador uma pasta ghr-projeto (ghr significa github repository)
+- Entra dentro dessa pasta e abre o terminal (botão direito Git bash here caso tenha o git bash)
+- No terminal (gosto do git bash) digita git clone http........(link do repositorio que vc criou anteriormente)
+- No terminal da um "ls" pra listar onde vc está (vai precisar entrar mais pasta dentro digitando cd + tab + enter vc entra na pasta)
+- Volta no seu computador copia os exercicios/arquivos que vc quer que suba no git e cola dentro da pasta (na pasta vai ter só um arquivo .git e um readme cola em baixo os exercicios)
+- volta no terminal e escreve git status (vc vai ver que vai estar verdinho os arquivos que vc colocou)
+- git add . (para adicionar)
+- git commit -m (vc insere um comentário ex git commit -m "exercicios de lógica")
+- git push origin master (vc dá um "push" e sobe seus exercícios no git)
+
 Configuração inicial: <br>
 --------------------------------------------------------------------------------------------------------------------------
 Criar um repositório  (Transforma o diretório atual em um repositório git, criando o subdiretório “.git”) <br>
@@ -15,7 +28,7 @@ Obs: Essas informações não necessariamente precisam ser do Github
 
 Atribui o nome do usuário
 $ git config --local user.name <nome>
-Exemplo: git config --user.name Vivian
+Exemplo: git config --user.name vivian
 
 $ git config --local user.email <email>
 Exemplo: git config --local user.email vivianmail@email.com
