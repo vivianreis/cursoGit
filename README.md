@@ -78,7 +78,7 @@ Develop - É uma camada(branch) criada a partir da master
 Feature - É uma camada(branch) criada a partir da develop 
 
 Como padrão de nome de branch (varia de empresa para empresa) geralmente usam feature/nome-da-branch 
-exemplo crianção de uma feature: git checkout -b feature/criando-camada-de-seguranca
+exemplo criação de uma feature: git checkout -b feature/criando-camada-de-seguranca
 
 git branch -D nome-da-branch (-D comando para deletar uma branch, é importante lembrar que para deletar a branch vc não pode estar na branch deve estar uma camada acima)
 
