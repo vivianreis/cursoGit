@@ -16,32 +16,41 @@ Resumão de passos para subir os exercicios: <br>
 Configuração inicial: <br>
 --------------------------------------------------------------------------------------------------------------------------
 Criar um repositório  (Transforma o diretório atual em um repositório git, criando o subdiretório “.git”) <br>
-$ git init <br>
-
-
-$git init <dir> (Cria o diretório e transforma em um repositório git) 
+```bash
+$git init (Cria o diretório e transforma em um repositório git) 
 Exemplo: git init java-codigo
+```
 
 Deve configurar o usuário e e-mail
 --------------------------------------------------------------------------------------------------------------------------
 Obs: Essas informações não necessariamente precisam ser do Github 
 
 Atribui o nome do usuário
+```bash
 $ git config --local user.name <nome>
 Exemplo: git config --user.name vivian
+```
 
+Atribui o email do usuário
+```bash
 $ git config --local user.email <email>
-Exemplo: git config --local user.email vivianmail@email.com
+Exemplo: git config --local user.email vivian@email.com
+```
+
 
 Configuração do Merge 
 --------------------------------------------------------------------------------------------------------------------------
-(Desativa o fast-foward, ou seja, cria sempre um commit na mesclagem)
+```bash
 $ git config --local merge.ff false 
+```
+
+(Desativa o fast-foward, ou seja, cria sempre um commit na mesclagem)
 
 Configurar o editor padrão que o git utilizará para mostrar as mensagens ou inseri-las no commit 
 --------------------------------------------------------------------------------------------------------------------------
 (Por padrão ele adota o editor do sistema operacional, no nosso caso utilizaremos o vim) 
 
+```bash
 $ git config --local core.editor <editor>
 Exemplo: $ git config --local core.editor vim
 
@@ -65,22 +74,28 @@ Depois dar git clone
 Git push origin Programa-Java-ola-mundo 
 
 Git push origin master
+``` 
 
 Branchs:
 ------------------------------------------------------------------------------------------------------------------------------------
+```bash
 git branch - Para verificar suas branches (dando esse comando ele lista os branches locais da sua máquina. Branch significa "ramo")
 git branch + nome branch (cria uma branch)
 git checkout –b + nome branch (além de criar a branch ele já entra dentro dela)
-
+```
 Obs: Cada empresa adota uma regra diferente para gerenciamento de branchs grande parte usa o padrão do git flow (master - develop - features)
-Master - É a produção.
-Develop - É uma camada(branch) criada a partir da master
-Feature - É uma camada(branch) criada a partir da develop 
+- Master - É a produção.
+- Develop - É uma camada(branch) criada a partir da master
+- Feature - É uma camada(branch) criada a partir da develop 
 
 Como padrão de nome de branch (varia de empresa para empresa) geralmente usam feature/nome-da-branch 
 exemplo criação de uma feature: git checkout -b feature/criando-camada-de-seguranca
 
-git branch -D nome-da-branch (-D comando para deletar uma branch, é importante lembrar que para deletar a branch vc não pode estar na branch deve estar uma camada acima)
+```bash
+git branch -D nome-da-branch
+``` 
+
+Obs: -D comando para deletar uma branch, é importante lembrar que para deletar a branch vc não pode estar na branch deve estar uma camada acima)
 
 Meu colega criou uma branch e deu um push consigo ver a branch no Github mas não vejo na minha máquina local, como faço para usar essa branch na minha maquina local?
 R: git checkout + nome-da-branch-do-colega importante dar git pull sempre para manter atualizado o local com a master/develop.
@@ -88,8 +103,10 @@ R: git checkout + nome-da-branch-do-colega importante dar git pull sempre para m
 Atualizar o repositório:
 ------------------------------------------------------------------------------------------------------------------------------------
 Atualiza todos os dados do repositório, ou seja, realiza um fetch seguido de um merge.
-
+```bash
 git pull 
+```
+
 
 
 
