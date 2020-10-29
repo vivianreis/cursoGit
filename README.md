@@ -107,6 +107,23 @@ Atualiza todos os dados do repositório, ou seja, realiza um fetch seguido de um
 git pull 
 ```
 
+Renomear um repositório:
+------------------------------------------------------------------------------------------------------------------------------------
+Para renomear um repositorio você pode fazer isso utilizando o seguinte comando:
+```bash
+git branch -m novo-nome
+```
+ou também pode renomear um branch local a partir de outro branch usando os comandos abaixo:
+```bash
+git checkout master
+git branch -m nome-antigo novo-nome
+```
+e para verificar se eles foi renomeado usar o seguinte comando: (ele vai listar tanto os branchs locais como também os branchs remotos)
+```bash
+git branch -a
+```
+
+
 
 
 
