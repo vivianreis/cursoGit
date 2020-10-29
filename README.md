@@ -118,7 +118,7 @@ ou também pode renomear um branch local a partir de outro branch usando os coma
 git checkout master
 git branch -m nome-antigo novo-nome
 ```
-e para verificar se eles foi renomeado usar o seguinte comando: (ele vai listar tanto os branchs locais como também os branchs remotos)
+e para verificar se foi renomeado usar o seguinte comando: (ele vai listar tanto os branches locais como também os branches remotos)
 ```bash
 git branch -a
 ```
