@@ -123,6 +123,13 @@ e para verificar se foi renomeado usar o seguinte comando: (ele vai listar tanto
 git branch -a
 ```
 
+Alterar a descrição da mensagem de um commit já efetuado:
+------------------------------------------------------------------------------------------------------------------------------------
+Para alterar a descrição da mensagem de um commit já efetuado você deve dar o seguinte comando
+```bash
+git commit -m "Nova mensagem que vai substituir a anterior" --amend 
+```
+
 
 
 
