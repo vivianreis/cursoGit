@@ -131,6 +131,3 @@ git commit -m "Nova mensagem que vai substituir a anterior" --amend
 ```
 
 
-
-
-
