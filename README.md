@@ -129,5 +129,6 @@ Para alterar a descrição da mensagem de um commit já efetuado você deve dar 
 ```bash
 git commit -m "Nova mensagem que vai substituir a anterior" --amend 
 ```
-
-
+Dica extra: GITPOD
+------------------------------------------------------------------------------------------------------------------------------------
+ Gitpod: É um ambiente de programação em nuvem. Pode compartilhar o ambiente de trabalho com qualquer pessoa, evitando o estresse de se fazer configuração de ambiente, focando apenas em codar o projeto.
