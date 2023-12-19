@@ -74,7 +74,21 @@ Depois dar git clone
 Git push origin Programa-Java-ola-mundo 
 
 Git push origin master
-``` 
+```
+
+Versionamento de código:
+------------------------------------------------------------------------------------------------------------------------------------
+É uma forma de gerenciar mudanças nos arquivos do seu código. Com o versionamento de código é possível saber que alteração foi realizada, quem realizou.
+
+
+Repositórios:
+------------------------------------------------------------------------------------------------------------------------------------
+Um repositório contém todos os arquivos do seu projeto e o histórico de revisão de cada arquivo. Você pode discutir e gerenciar o trabalho do projeto dentro do repositório.
+
+É possível possuir repositórios individualmente ou compartilhar a propriedade de repositórios com outras pessoas em uma organização.
+
+Também é possível restringir quem tem acesso a um repositório escolhendo a visibilidade do repositório. Por exemplo no meu Github pessoal deixo 30 repositórios públicos e 30 privados.
+
 
 Branchs:
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -99,6 +113,66 @@ Obs: -D comando para deletar uma branch, é importante lembrar que para deletar 
 
 Meu colega criou uma branch e deu um push consigo ver a branch no Github mas não vejo na minha máquina local, como faço para usar essa branch na minha maquina local?
 R: git checkout + nome-da-branch-do-colega importante dar git pull sempre para manter atualizado o local com a master/develop.
+
+Comando: git clone:
+------------------------------------------------------------------------------------------------------------------------------------
+"copia" todo um repositório remoto para um outro repositório local.
+
+```
+git clone <link do repositório>
+```
+
+Comando: git checkout:
+------------------------------------------------------------------------------------------------------------------------------------
+É uma forma de alternar entre suas branches. Ele tem diferentes formas de usar, mas seus dois principais usos são: trocar de branch ou restaurar arquivos.
+
+Comando: git branch:
+------------------------------------------------------------------------------------------------------------------------------------
+git branch - Para verificar suas branches (dando esse comando ele lista os branches locais da sua máquina)
+
+git branch + nome branch (cria uma branch)
+
+git checkout -b + nome branch (além de criar a branch ele já entra dentro dela)
+
+Comando: git status:
+------------------------------------------------------------------------------------------------------------------------------------
+Para saber algumas informações sobre a branch(ramificação) na qual você está trabalhando agora você pode utilizar o comando “git status”. Esse comando esclarece quais arquivos foram alterados e faz uma comparação com relação à ramificação principal.
+
+```
+git status
+```
+
+Comando: git add:
+------------------------------------------------------------------------------------------------------------------------------------
+Prepara para adicionar as alterações que vc fez.
+
+Se quiser preparar para adicionar um único arquivo você usa 
+
+```
+git add "nome_do_arquivo"
+``` 
+
+Para preparar todos os arquivos 
+```
+git add *
+```
+
+Comando: git commit:
+------------------------------------------------------------------------------------------------------------------------------------
+Ele leva as mudanças de um ambiente local para o repositório no git, permitindo ainda a inserção de uma mensagem descritiva.
+
+```
+git commit -m "Mensagem inclusão de atributos na model" 
+```
+
+e se errar a mensagem?
+```
+git commit -m "Nova mensagem que vai substituir a anterior" --amend
+```
+
+Comando: git push:
+------------------------------------------------------------------------------------------------------------------------------------
+O push serve para subir suas alterações da sua branch para um determinado repositório. Ele sobe todos os commits e a mensagem que você colocou antes para identificar sobre o que era a subida.
 
 Atualizar o repositório:
 ------------------------------------------------------------------------------------------------------------------------------------
