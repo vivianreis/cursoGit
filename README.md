@@ -174,12 +174,27 @@ Comando: git push:
 ------------------------------------------------------------------------------------------------------------------------------------
 O push serve para subir suas alterações da sua branch para um determinado repositório. Ele sobe todos os commits e a mensagem que você colocou antes para identificar sobre o que era a subida.
 
-Atualizar o repositório:
+Comando: git pull:
 ------------------------------------------------------------------------------------------------------------------------------------
-Atualiza todos os dados do repositório, ou seja, realiza um fetch seguido de um merge.
-```bash
+
+Esse comando traz para a seu repositório na sua maquina local todas as mudanças que foram realizadas. É uma forma de atualizar a sua versão do seu código com o que foi alterado remotamente.
+
+É muito importante estar com sua branch atualizada.
+
+```
 git pull 
 ```
+
+
+Pull request:
+------------------------------------------------------------------------------------------------------------------------------------
+Pull request significa “Solicitação para puxar” ao enviar uma notificação de PR as demais pessoas desenvolvedoras do projeto vão saber que tem um PR para análisar e que precisam fazer o merge do código na branch principal.
+
+
+Merge:
+------------------------------------------------------------------------------------------------------------------------------------
+Merge (significa “mesclar”). Fazer um merge é quando “juntamos”, “mesclamos” duas branchs, e pegamos todo o código de uma branch e pedimos ao git para adicionar esse código a outra branch.
+
 
 Renomear um repositório:
 ------------------------------------------------------------------------------------------------------------------------------------
@@ -203,6 +218,8 @@ Para alterar a descrição da mensagem de um commit já efetuado você deve dar 
 ```bash
 git commit -m "Nova mensagem que vai substituir a anterior" --amend 
 ```
+
+
 Dica extra: GITPOD
 ------------------------------------------------------------------------------------------------------------------------------------
  Gitpod: É um ambiente de programação em nuvem. Pode compartilhar o ambiente de trabalho com qualquer pessoa, evitando o estresse de se fazer configuração de ambiente, focando apenas em codar o projeto.
